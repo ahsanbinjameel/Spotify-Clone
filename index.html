@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/utilities.css" />
+
+    <title>Spotify</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <header>
+        <div id="navbar" class="navbar">
+            <div class="navleftsection">
+                <button class="btn-logo">
+            <img src="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png" alt="Spotify" />
+          </button> <span>Spotify</span>
+                <a href="/"><button id="btnHome" class="btn-icon-rounded" title="Home">
+            <span class="material-symbols-outlined"> home </span>
+          </button></a>
+
+                <div class="searchbox">
+                    <button id="btnSearch" class="btn-icon-rounded" title="Search">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+                    <input type="text" name="search" id="search" placeholder="What Do You Want to Play?" />
+                    <button id="btnBrowse" class="btn-icon-rounded">
+              <span class="material-symbols-outlined" title="Browse">
+                Browse
+              </span>
+            </button>
+                </div>
+            </div>
+
+            <div class="navrightsection">
+                <ul class="nav-links">
+                    <li>Premium</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                </ul>
+
+                <div id="installapp" class="intallapp" onclick="InstallApp()">
+                    <button title="Download" id="installapp">
+              <span class="material-symbols-outlined"> Download </span>
+            </button>
+                    <span>Install App</span>
+                </div>
+                <button id="signup" class="btn-primary">Sign up</button>
+                <button id="login" class="btn-primary">Log in</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="content">
+        <div class="LibraryGroup">
+            <h2>Your Library</h2>
+            <div class="PlaylistItems">
+                <h3>Create Your First Playlist</h3>
+                <h5>It's Easy We'll Help You</h5>
+                <button class="btn-seconday">Create Playlist</button>
+            </div>
+            <div class="PlaylistItems">
+                <h3>Let's find some podcasts to follow</h3>
+                <h5>We'll keep you updated on new episodes</h5>
+                <button class="btn-seconday">Browse Products</button>
+            </div>
+
+        </div>
+        <div id="Media" class="MediaGroup">
+
+
+        </div>
+    </section>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>

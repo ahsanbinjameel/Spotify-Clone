@@ -1,0 +1,188 @@
+[
+
+    {
+        "CategoryHeading": "Trending Songs",
+        "CollectionList": [
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e02c53e5adf9f81693d62f98019",
+                "Title": "Lutt Le Gaya",
+                "Description": "Shashwat Sachdev, Simran Choudhary"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e027f896d8e491af883c51e6d75",
+                "Title": "12 Saal (Baarah Saal)",
+                "Description": "Bilal Saeed"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                "Title": "WILDFLOWER",
+                "Description": "Billie Eilish"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            },
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e02c53e5adf9f81693d62f98019",
+                "Title": "Lutt Le Gaya",
+                "Description": "Shashwat Sachdev, Simran Choudhary"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            },
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e02c53e5adf9f81693d62f98019",
+                "Title": "Lutt Le Gaya",
+                "Description": "Shashwat Sachdev, Simran Choudhary"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e027f896d8e491af883c51e6d75",
+                "Title": "12 Saal (Baarah Saal)",
+                "Description": "Bilal Saeed"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                "Title": "WILDFLOWER",
+                "Description": "Billie Eilish"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            }
+
+
+        ]
+    },
+    {
+        "CategoryHeading": "Popular Artists",
+        "CollectionList": [
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e02c53e5adf9f81693d62f98019",
+                "Title": "Lutt Le Gaya",
+                "Description": "Shashwat Sachdev, Simran Choudhary"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e027f896d8e491af883c51e6d75",
+                "Title": "12 Saal (Baarah Saal)",
+                "Description": "Bilal Saeed"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                "Title": "WILDFLOWER",
+                "Description": "Billie Eilish"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            },
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                "Title": "WILDFLOWER",
+                "Description": "Billie Eilish"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            },
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e02c53e5adf9f81693d62f98019",
+                "Title": "Lutt Le Gaya",
+                "Description": "Shashwat Sachdev, Simran Choudhary"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e027f896d8e491af883c51e6d75",
+                "Title": "12 Saal (Baarah Saal)",
+                "Description": "Bilal Saeed"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                "Title": "WILDFLOWER",
+                "Description": "Billie Eilish"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            }
+
+
+        ]
+    },
+    {
+        "CategoryHeading": "Popular Albums",
+        "CollectionList": [
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e02c53e5adf9f81693d62f98019",
+                "Title": "Lutt Le Gaya",
+                "Description": "Shashwat Sachdev, Simran Choudhary"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e027f896d8e491af883c51e6d75",
+                "Title": "12 Saal (Baarah Saal)",
+                "Description": "Bilal Saeed"
+            },
+
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                "Title": "WILDFLOWER",
+                "Description": "Billie Eilish"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            },
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e02c53e5adf9f81693d62f98019",
+                "Title": "Lutt Le Gaya",
+                "Description": "Shashwat Sachdev, Simran Choudhary"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e027f896d8e491af883c51e6d75",
+                "Title": "12 Saal (Baarah Saal)",
+                "Description": "Bilal Saeed"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+                "Title": "WILDFLOWER",
+                "Description": "Billie Eilish"
+            },
+
+            {
+                "ImagePath": "https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d",
+                "Title": "Aarzu",
+                "Description": "Noor, Khan, Madhurxo"
+            }
+
+        ]
+    }
+
+]

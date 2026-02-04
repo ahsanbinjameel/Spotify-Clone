@@ -1,0 +1,65 @@
+.btn-logo {
+    /* background-color: white; */
+    color: black;
+    background-color: black;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: auto;
+    width: auto;
+}
+
+.btn-icon-rounded {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    border: none;
+}
+
+.btn-icon-rounded:hover {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.btn-primary {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: rgb(33, 33, 33);
+}
+
+.btn-seconday {
+    background-color: white;
+    color: rgb(33, 33, 33);
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-seconday:hover {
+    background-color: rgb(66, 66, 66);
+    color: white;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "spotify-clone",
+    "version": "1.0.0",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "nodemon ./javascript/server.mjs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "build": "^0.1.4",
+        "cors": "^2.8.6",
+        "express": "^5.2.1"
+    }
+}

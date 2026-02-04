@@ -1,0 +1,130 @@
+:root {
+    --text-subdued: #b3b3b3;
+    /* Assign a value */
+    --background-main: rgba(33, 33, 33, 1);
+    --font-stack: Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    all: unset;
+}
+
+body {
+    background-color: black;
+}
+
+.content {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    /* background-color: var(--background-main); */
+    display: flex;
+    gap: 1rem;
+    padding: 1%;
+}
+
+.content>div {
+    background-color: var(--background-main);
+    border-radius: 0.5rem;
+    color: white;
+    padding: 1rem;
+}
+
+.content .LibraryGroup {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: calc(20% - 0.5%);
+    height: 100%;
+}
+
+.PlaylistItems {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #1f1f1f;
+}
+
+.PlaylistItems>button {
+    width: fit-content;
+    font-weight: 560;
+}
+
+.content .MediaGroup {
+    width: calc(80% - 0.5%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    overflow-y: scroll;
+}
+
+.CollectionCategory {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.CollectionCategory>.CollectionList {
+    display: flex;
+    flex-direction: row;
+    /* flex: 3; */
+    width: 100%;
+    gap: 1rem;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.CollectionCategory>.CollectionList::-webkit-scrollbar {
+    display: none;
+}
+
+.CollectionList>.Collection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 1rem;
+    scroll-snap-align: center;
+    width: 12rem;
+    height: 16rem;
+    transition: 0.2s ease-in-out;
+}
+
+.CollectionList>.Collection:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.CollectionList>.Collection>img {
+    height: auto;
+}
+
+.CollectionList>.Collection>.Title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.CollectionList>.Collection>.Description {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
