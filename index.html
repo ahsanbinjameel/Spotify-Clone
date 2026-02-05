@@ -14,6 +14,7 @@
       href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/controller.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/utilities.css" />
 
@@ -90,7 +91,37 @@
           <button class="btn-seconday">Browse Products</button>
         </div>
       </div>
-      <div id="Media" class="MediaGroup"></div>
+      <div id="Media" class="Media">
+        <div id="MainContent" class="MainContent"></div>
+        <div id="PlayerGroup" class="PlayerGroup">
+          <div class="MediaPlayer">
+            <div class="MusicTitle">12 Saal (Baarah Saal)</div>
+            <div class="Controller">
+              <div id="PlayBack" class="material-symbols-outlined">
+                arrow_back_2
+              </div>
+              <div id="PlayerToggle" class="material-symbols-outlined">
+                pause
+              </div>
+              <div id="PlayNext" class="material-symbols-outlined">
+                play_arrow
+              </div>
+            </div>
+            <div class="DurationAndVolume">
+              <div class="Duration">00:00 / 03:00</div>
+              <div class="VolumeController">
+                <div id="MuteToggle" class="material-symbols-outlined">
+                  volume_up
+                </div>
+                <input type="range" name="Volumn" id="Volumn" />
+              </div>
+            </div>
+          </div>
+          <div class="MediaTracker">
+            <input type="range" name="MusicTracker" id="MusicTracker" />
+          </div>
+        </div>
+      </div>
     </section>
     <script src="./javascript/main.js"></script>
   </body>

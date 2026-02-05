@@ -57,17 +57,25 @@ body {
     background-color: #1f1f1f;
 }
 
-.PlaylistItems>button {
+.PlaylistItems > button {
     width: fit-content;
     font-weight: 560;
 }
 
-.content .MediaGroup {
+.Media {
     width: calc(80% - 0.5%);
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
+}
+
+.MainContent {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -169,11 +177,11 @@ grid-column: 1/5;
 
 
 
-.MediaGroup::-webkit-scrollbar {
+.MainContent::-webkit-scrollbar {
 background-color: rgba(255, 255, 255, 0.184);
 }
 
-.MediaGroup::-webkit-scrollbar-thumb {
+.MainContent::-webkit-scrollbar-thumb {
 background-color: rgba(255, 255, 255, 0.26);
 }
 
@@ -181,7 +189,7 @@ background-color: rgba(255, 255, 255, 0.26);
 .CollectionList::-webkit-scrollbar {
     display: none;
 }
-
+/* 
 .CollectionList::scroll-button(right), .CollectionList::scroll-button(left) {
 
 background-color: rgba(255, 255, 255, 0.064);
@@ -242,4 +250,4 @@ position-area: left center;
 opacity: 0.5;
 cursor: auto;
 
-}
+} */

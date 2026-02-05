@@ -1,0 +1,51 @@
+
+.PlayerGroup{
+height: 15%;
+background-color: var(--background-seconday);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 1rem;
+border-radius: 0.5rem;
+
+}
+
+.PlayerGroup input, .PlayerGroup .material-symbols-outlined{
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+ 
+
+
+.MediaPlayer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Controller{
+    display: flex;
+    gap: 1rem;
+}
+
+.Controller > div{
+  cursor: pointer;
+}
+
+.MediaTracker input{
+    width: 100%;
+}
+
+.DurationAndVolume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.VolumeController{
+    display: flex;
+    gap: 1rem;
+}

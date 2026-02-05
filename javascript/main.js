@@ -1,6 +1,6 @@
  const LoadCollectionData = (categories) => {
-    const Media = document.getElementById("Media");
-    if (!Media) throw new Error("#Media not found");
+    const MainContent = document.getElementById("MainContent");
+    if (!MainContent) throw new Error("#MainContent not found");
 
     const fragment = document.createDocumentFragment();
 
@@ -19,6 +19,8 @@
             const collection = document.createElement("div");
             collection.className = "Collection";
             
+            collection.setAttribute("data-name", item.Title)
+            collection.setAttribute("onclick", "console.log(this);")
 
             const img = document.createElement("img");
             img.src = item.ImagePath;
@@ -40,7 +42,7 @@
         fragment.appendChild(categoryDiv);
     });
 
-    Media.appendChild(fragment);
+    MainContent.appendChild(fragment);
 };
 
 
