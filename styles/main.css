@@ -2,6 +2,7 @@
     --text-subdued: #b3b3b3;
     /* Assign a value */
     --background-main: rgba(33, 33, 33, 1);
+    --background-seconday: rgba(255, 255, 255, 0.2);
     --font-stack: Helvetica, Arial, sans-serif;
 }
 
@@ -144,8 +145,10 @@ grid-column: 1/5;
 }
 
 .CollectionList>.Collection>img {
-    height: auto;
+    height: 9rem;
 }
+
+
 
 .CollectionList>.Collection>.Title {
     font-size: 0.9rem;
@@ -195,6 +198,28 @@ margin-right: 1rem;
 
 }
 
+.CollectionList::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    height: 10rem;
+    width: 10rem;
+
+}
+
+.Collection::scroll-marker{
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--background-seconday);
+}
+
+.Collection::scroll-marker:target-current{
+    background-color: pink
+}
+
+
+
 .CollectionList::scroll-button(right):hover, .CollectionList::scroll-button(left):hover {
 
 scale: 1.2;
@@ -203,7 +228,7 @@ scale: 1.2;
 
 .CollectionList::scroll-button(right){
     content: '>';
-    position-area: right center;
+    position-area: right center;    
 }
 
 .CollectionList::scroll-button(left) {

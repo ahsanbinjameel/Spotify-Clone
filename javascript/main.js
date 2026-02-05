@@ -1,44 +1,60 @@
- const LoadCollectionData = async(CollectionCategories) => {
+ const LoadCollectionData = (categories) => {
+    const Media = document.getElementById("Media");
+    if (!Media) throw new Error("#Media not found");
 
-     const Media = document.getElementById("Media");
-     CollectionCategories.forEach(Category => {
-         const CollectionCategory = document.createElement("div")
-         CollectionCategory.classList.add("CollectionCategory");
-         const CollectionHeading = document.createElement("h1");
-         CollectionHeading.classList.add("CollectionHeading");
-         CollectionHeading.innerText = Category.CategoryHeading;
-         CollectionCategory.appendChild(CollectionHeading)
-         const CollectionList = document.createElement("div");
-         CollectionList.classList.add("CollectionList");
-         Category.CollectionList.forEach(listItem => {
+    const fragment = document.createDocumentFragment();
 
-             const Collection = `<div class="Collection">
-                        <img src="${listItem.ImagePath}" alt="Category Image">
-                        <p class="Title">${listItem.Title}</p>
-                        <p class="Description">${listItem.Description}</p>
-                    </div>`
-             CollectionList.innerHTML += Collection;
-         })
+    categories.forEach(category => {
+        const categoryDiv = document.createElement("div");
+        categoryDiv.className = "CollectionCategory";
+
+        const heading = document.createElement("h1");
+        heading.className = "CollectionHeading";
+        heading.textContent = category.CategoryHeading;
+
+        const listDiv = document.createElement("div");
+        listDiv.className = "CollectionList";
+
+        category.CollectionList.forEach(item => {
+            const collection = document.createElement("div");
+            collection.className = "Collection";
+            
+
+            const img = document.createElement("img");
+            img.src = item.ImagePath;
+            img.alt = "Category Image";
+
+            const title = document.createElement("p");
+            title.className = "Title";
+            title.textContent = item.Title;
+
+            const desc = document.createElement("p");
+            desc.className = "Description";
+            desc.textContent = item.Description;
+
+            collection.append(img, title, desc);
+            listDiv.appendChild(collection);
+        });
+
+        categoryDiv.append(heading, listDiv);
+        fragment.appendChild(categoryDiv);
+    });
+
+    Media.appendChild(fragment);
+};
 
 
-         Media.appendChild(CollectionCategory);
-         CollectionCategory.appendChild(CollectionList);
+const fetchCollectionCategories = async () => {
+    const res = await fetch('http://localhost:4000/GetCollectionCategories');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.json();
+};
 
-
-
-     })
-
- }
-
- const fetchCollectionCategories = async() => {
-     const res = await fetch('http://localhost:4000/GetCollectionCategories')
-     return res.json()
- }
 
  const init = async() => {
      const data = await fetchCollectionCategories();
-     await LoadCollectionData(data);
+     LoadCollectionData(data);
 
  }
 
- init()
+ init();
