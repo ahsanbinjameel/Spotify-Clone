@@ -4,7 +4,8 @@
      CollectionCategories.forEach(Category => {
          const CollectionCategory = document.createElement("div")
          CollectionCategory.classList.add("CollectionCategory");
-         const CollectionHeading = document.createElement("h2");
+         const CollectionHeading = document.createElement("h1");
+         CollectionHeading.classList.add("CollectionHeading");
          CollectionHeading.innerText = Category.CategoryHeading;
          CollectionCategory.appendChild(CollectionHeading)
          const CollectionList = document.createElement("div");
