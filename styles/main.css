@@ -68,28 +68,78 @@ body {
     flex-direction: column;
     gap: 3rem;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .CollectionCategory {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
     gap: 1rem;
 }
 
 .CollectionCategory>.CollectionList {
-    display: flex;
-    flex-direction: row;
-    /* flex: 3; */
-    width: 100%;
-    gap: 1rem;
-    overflow-y: auto;
-    scroll-snap-type: x mandatory;
+display: flex;
+flex-direction: row;
+/* flex: 3; */
+width: 100%;
+gap: 1rem;
+overflow-y: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+anchor-name: --carousel;
+position: relative;
+
+
 }
 
-.CollectionCategory>.CollectionList::-webkit-scrollbar {
+.CollectionList::-webkit-scrollbar {
     display: none;
 }
+
+.CollectionList::scroll-button(right), .CollectionList::scroll-button(left) {
+
+background-color: rgba(255, 255, 255, 0.064);
+color: white;
+width: 3rem;
+height: 3rem;
+font-size: large;
+cursor: pointer;
+border: none;
+/* position: fixed; */
+transition: all 0.2s ease-in-out;
+position-anchor: --carousel;
+position: inline;  
+margin-right: 1rem;
+
+}
+
+.CollectionList::scroll-button(right):hover, .CollectionList::scroll-button(left):hover {
+
+scale: 1.2;
+
+}
+
+.CollectionList::scroll-button(right){
+    content: '>';
+    position-area: right center;
+    /* translate: -50%; */
+}
+
+.CollectionList::scroll-button(left) {
+content: '<';
+position-area: left center;
+/* translate: 50%; */
+
+}
+
+
+.CollectionList::scroll-button(right):disabled, .CollectionList::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+}
+
 
 .CollectionList>.Collection {
     display: flex;
